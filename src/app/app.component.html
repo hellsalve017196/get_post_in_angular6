@@ -1,0 +1,16 @@
+<app-input
+(serverCreated)="onServerAdded($event)"
+>
+
+</app-input>
+
+
+<app-test
+  *ngFor="let server of serverElements"
+  [serverElement]="server"
+>
+</app-test>
+
+<h1>
+  {{ weatherList | json }}
+</h1>
